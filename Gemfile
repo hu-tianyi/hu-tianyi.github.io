@@ -26,6 +26,7 @@ gem "minimal-mistakes-jekyll"
 #
 # If you have any other plugins, put them here!
 gem "jekyll-include-cache", group: :jekyll_plugins
+gem "jekyll-archives", group: :jekyll_plugins
 
 
 group :jekyll_plugins do
