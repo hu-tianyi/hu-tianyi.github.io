@@ -25,5 +25,8 @@ gem "minimal-mistakes-jekyll"
 #   gem "jekyll-include-cache"
 #
 # If you have any other plugins, put them here!
+gem "jekyll-include-cache", group: :jekyll_plugins
+
+
 group :jekyll_plugins do
 end
