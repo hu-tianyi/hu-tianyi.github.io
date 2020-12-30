@@ -109,9 +109,9 @@ author:
   location         : "Dongguan, China"
   email            : "hu_tianyi@outlook.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hu_tianyi@outlook.com"
+#    - label: "Email"
+#      icon: "fas fa-fw fa-envelope-square"
+#      url: "mailto:hu_tianyi@outlook.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.hutianyi.tech"
@@ -138,12 +138,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hu_tianyi@outlook.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.hutianyi.tech"
+#    - label: "Email"
+#      icon: "fas fa-fw fa-envelope-square"
+#      url: "mailto:hu_tianyi@outlook.com"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://www.hutianyi.tech"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/TianyiHu3"
@@ -159,7 +159,6 @@ footer:
     - label: "ZhiHu"
       icon: "fab fa-fw fa-zhihu"
       url: "https://www.zhihu.com/people/hutianyi-45"
-      # url:
 
 
 # Reading Files
