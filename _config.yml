@@ -27,7 +27,7 @@ subtitle                 : "Version 1.0.1" # site tagline that appears below sit
 name                     : "Tianyi Hu" # "Your Name"
 description              : "An amazing website." #  describes the site. Used predominantly in meta descriptions for improving SEO.
 url                      : "https:\\www.hutianyi.tech" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
+baseurl                  : #"/blog" # the subpath of your site, e.g. "/blog"
 repository               : "hu-tianyi/hu-tianyi.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/bio-photo.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
