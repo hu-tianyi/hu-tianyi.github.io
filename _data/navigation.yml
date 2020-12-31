@@ -9,6 +9,12 @@ main:
     description: "Something about myself"
   - title: "Posts"
     url: /year-archive/
+  - title: "Talks"
+    url: /talk/
+    description: "Some presentations"
+  - title: "Photos"
+    url: /photo/
+    description: "Some photographs"
   - title: "Collections"
     url: /collection-archive/
   # - title: "Sitemap"

@@ -23,7 +23,7 @@ minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark",
 locale                   : "en-US" # "en-GB", "zh-CN", "zh-HK"
 title                    : "hutianyi.tech" # The name of your site. Is used throughout the theme in places like the site masthead and <title> tags.
 title_separator          : "-"
-subtitle                 : "Version 1.0.1" # site tagline that appears below site title in masthead
+subtitle                 : "Version 1.0.2" # site tagline that appears below site title in masthead
 name                     : "Tianyi Hu" # "Your Name"
 description              : "An amazing website." #  describes the site. Used predominantly in meta descriptions for improving SEO.
 url                      : "https:\\www.hutianyi.tech" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
