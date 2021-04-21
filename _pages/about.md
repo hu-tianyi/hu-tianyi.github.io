@@ -15,13 +15,13 @@ sidebar:
   - title: "Another Title"
     text: "More text here."
 categories:
-  - Layout
+  - About
   - Uncategorized
 tags:
-  - edge case
-  - image
-  - layout
-last_modified_at: 2020-12-31T14:51:23-04:00
+  - About
+  - CV
+  - Resume
+last_modified_at: 2021-04-21T14:51:23-04:00
 toc: true
 ---
 
@@ -73,7 +73,7 @@ Talks
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching %}
