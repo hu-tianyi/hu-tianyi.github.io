@@ -1,5 +1,6 @@
 ---
 title: "Solve 'MemoryError: Unable to allocate XXXGiB for an array' by setting Overcommit and Swap"
+classes: wide
 categories:
   - Code
 tags:
