@@ -10,7 +10,12 @@ last_modified_at: 2021-05-23T16:00:52-04:00
 ---
 ### Problem Description
 In my recent RL project, I need to generate a multidimensional Numpy array for a Q-table.
-However, as the array is multidimensional and with a really big size,  the terminal sends out an error 
+
+```python
+self.qtable = np.zeros((2, 2,2,2,2,2,2,2,2,2,10, 2, 10, 2,100000))
+```
+
+However, as the array has a really big size,  the terminal sends out an error 
 
 ```
 MemoryError: Unable to allocate 305. GiB for an array with shape (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 100000) and data type float64
