@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Tianyi Hu"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A master student of Computer Engineering at UC Irvine"
+  bio              : "Master's student in Computer Engineering at UC Irvine"
   location         : "Irvine, California"
   email            : "hu_tianyi@outlook.com"
   links:
