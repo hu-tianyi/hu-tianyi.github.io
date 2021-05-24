@@ -7,6 +7,7 @@ tags:
   - overcommit
   - swap
 last_modified_at: 2021-05-23T16:00:52-04:00
+toc: true
 ---
 ### Problem Description
 In my recent RL project, I need to generate a multidimensional Numpy array for a Q-table.
