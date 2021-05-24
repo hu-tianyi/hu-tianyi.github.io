@@ -6,7 +6,7 @@ header:
   caption: "Copyright (c) [**Tianyi Hu**](https://www.hutianyi.tech)"
   actions:
   - label: "Get my CV"
-    url: /assets/documents/CV_A4_Size.pdf
+    url: /assets/documents/CV_TianyiHu_English.pdf
 sidebar:
   - title: "Title"
     image: /assets/images/logo.png
