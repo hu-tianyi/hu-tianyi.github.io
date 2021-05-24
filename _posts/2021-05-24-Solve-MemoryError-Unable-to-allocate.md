@@ -124,8 +124,5 @@ $ free -t -m
 After finishing these two steps, I can run my RL model without any error related to the memory space.
 
 ### Reference
-1. "Unable to allocate array with shape and data type. "[https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)
-
-2. "Change swap size in Ubuntu 18.04 or newer. "
-
-   [https://bogdancornianu.com/change-swap-size-in-ubuntu/](https://bogdancornianu.com/change-swap-size-in-ubuntu/)
+1. "Unable to allocate array with shape and data type." [https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)
+2. "Change swap size in Ubuntu 18.04 or newer." [https://bogdancornianu.com/change-swap-size-in-ubuntu/](https://bogdancornianu.com/change-swap-size-in-ubuntu/)
