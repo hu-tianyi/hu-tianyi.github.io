@@ -1,10 +1,10 @@
 ---
-title: "Solve "MemoryError: Unable to allocate XXX. GiB for an array" by setting Overcommit and Swap"
+title: "Solve 'MemoryError: Unable to allocate XXXGiB for an array' by setting Overcommit and Swap"
 categories:
   - Code
 tags:
-  - Overcommit
-  - Swap
+  - overcommit
+  - swap
 last_modified_at: 2021-05-23T16:00:52-04:00
 ---
 
