@@ -6,7 +6,7 @@ categories:
 tags:
   - overcommit
   - swap
-last_modified_at: 2021-05-23T16:00:52-04:00
+last_modified_at: 2021-05-24T16:38:00-07:00
 toc: true
 ---
 ### Problem Description
@@ -15,14 +15,14 @@ In my recent RL project, I need to generate a multidimensional Numpy array for a
 self.qtable = np.zeros((2,2,2,2,2,2,2,2,2,2,10,2,10,2,100000))
 ```
 
-However, as the array has a really big size,  the terminal sends out an error 
+However, as the array has a really big size,  the terminal reports an error:
 ```
 MemoryError: Unable to allocate 305. GiB for an array with shape (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 100000) and data type float64
 ```
 
 ### Step1: Overcommit handling
 
-Firstly, it exposes the problem of my Ubuntu system's [overcommit handling](https://www.kernel.org/doc/Documentation/vm/overcommit-accounting) mode.
+Firstly, it exposes the problem of my ubuntu system's [overcommit handling](https://www.kernel.org/doc/Documentation/vm/overcommit-accounting) mode.
 
 The default overcommit handling is set to `0` , which means:
 ```
@@ -35,14 +35,14 @@ This is the default.
 
 As  `305. GiB`  is much greater than my actual physical memory space `32. GiB` . This obvious overcommit of address space is refused.
 
-To check the current overcommit mode, you can run:
+To check the current overcommit mode, run:
 ```bash
 $ cat /proc/sys/vm/overcommit_memory
 ```
 
-In my situation, as the array should be sparse, actually it will not occupy `305. GiB` memory space as what it claimed.  So It is fine to allow the overcommit. 
+In my situation, as the array should be sparse, actually it will not occupy `305. GiB` memory space as what it claims.  So It is fine to allow the overcommit. 
 
-To enable the overcommit, you can run:
+To enable the overcommit, run:
 ```bash
 $ sudo -i
 $ echo 1 > /proc/sys/vm/overcommit_memory
@@ -61,15 +61,15 @@ Now the system will allow you to declare a large array without worrying about ho
 
 After setting the 'Overcommit handling mode' to `1`, I can start training my Q-learning model.
 
-However,  the 'sparse' array becomes denser and denser when the training in progress.  Finally, it runs out of my `32.GiB` physical memory space at around epochs of 4750000 (Total: 8000000).`
+However,  the 'sparse' array becomes denser and denser during the training progress.  Finally, it runs out of my `32. GiB` physical memory space at around 4750000 epochs (Total epochs: 8000000).
 
-As a result, the system has to terminate the training before it is finished.   :(
+As a result, the system has to terminate the training before it is finished.		:(
 
-I need more available memory space!! I realize that increasing the `Swap` size would be helpful.
+I need more available memory space!! I realize that increasing the `Swap` size could be helpful.
 
 `Swap` is a special file located on your hard disk, which the system could use as an additional virtual memory space.
 
-The default size of the `Swap` on my `Ubuntu20.04` system is `2.GiB`, which is insufficient. 
+The default size of the `Swap` on my `ubuntu20.04` system is `2. GiB`, which is insufficient. 
 
 To extend the `Swap` space:
 1. Turn off all `Swap processes` by:
@@ -124,5 +124,8 @@ $ free -t -m
 After finishing these two steps, I can run my RL model without any error related to the memory space.
 
 ### Reference
-1. Unable to allocate array with shape and data type. [https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)
-2. Change swap size in Ubuntu 18.04 or newer. [https://bogdancornianu.com/change-swap-size-in-ubuntu/](https://bogdancornianu.com/change-swap-size-in-ubuntu/)
+1. "Unable to allocate array with shape and data type. "[https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)
+
+2. "Change swap size in Ubuntu 18.04 or newer. "
+
+   [https://bogdancornianu.com/change-swap-size-in-ubuntu/](https://bogdancornianu.com/change-swap-size-in-ubuntu/)
