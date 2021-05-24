@@ -35,7 +35,7 @@ The root is allowed to allocate slightly more memory in this mode.
 This is the default.
 ```
 
-As ` 305. GiB `  is much greater than my actual physical memory space `32. GiB` . This obvious overcommit of address space is refused.
+As  `305. GiB`  is much greater than my actual physical memory space `32. GiB` . This obvious overcommit of address space is refused.
 
 To check the current overcommit mode, you can run:
 
