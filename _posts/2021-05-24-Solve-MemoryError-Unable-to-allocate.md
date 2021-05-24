@@ -7,12 +7,9 @@ tags:
   - swap
 last_modified_at: 2021-05-23T16:00:52-04:00
 ---
-
 ### Problem Description
-
-In one my recent RL project, I need to generate a multidimensional numpy array for my Q-table.
-
-However, as the array is multidimensional and with really big size,  the terminal send out an error 
+In my recent RL project, I need to generate a multidimensional Numpy array for a Q-table.
+However, as the array is multidimensional and with a really big size,  the terminal sends out an error 
 
 ```
 MemoryError: Unable to allocate 305. GiB for an array with shape (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 10, 2, 100000) and data type float64
@@ -28,11 +25,11 @@ The default overcommit handling is set to `0` , which means:
 Heuristic overcommit handling. 
 Obvious overcommits of address space are refused. Used for a typical system. 
 It ensures a seriously wild allocation fails while allowing overcommit to reduce swap usage. 
-root is allowed to allocate slightly more memory in this mode. 
+The root is allowed to allocate slightly more memory in this mode. 
 This is the default.
 ```
 
-As ` 305.GiB `  is much greater than my actual physical memory space `32.GiB` . This obvious overcommit of address space is refused.
+As ` 305. GiB `  is much greater than my actual physical memory space `32. GiB` . This obvious overcommit of address space is refused.
 
 To check the current overcommit mode, you can run:
 
@@ -54,7 +51,7 @@ Changing this to `1` means:
 ```
 Always overcommit. 
 Appropriate for some scientific applications.
-Classic example is code using sparse arrays and just relying on the virtual memory consisting almost entirely of zero pages.
+A classic example is a code using sparse arrays and just relying on the virtual memory consisting almost entirely of zero pages.
 ```
 
 Now the system will allow you to declare a large array without worrying about how large it is. The system will only allocate physical memory pages for those explicit data in your sparse array.
@@ -65,13 +62,13 @@ Now the system will allow you to declare a large array without worrying about ho
 
 After setting the 'Overcommit handling mode' to `1`, I can start training my Q-learning model.
 
-However, as the training in progress, the 'sparse' array becomes denser and denser.  Finally, it runs out of my `32.GiB` physical memory space at around epochs of 4750000 (Total: 8000000).`
+However,  the 'sparse' array becomes denser and denser when the training in progress.  Finally, it runs out of my `32.GiB` physical memory space at around epochs of 4750000 (Total: 8000000).`
 
 As a result, the system has to terminate the training before it is finished.   :(
 
 I need more available memory space!! I realize that increasing the `Swap` size would be helpful.
 
-`Swap` is a special file located on your hard disk, which the system could use it as an additional virtual memory space.
+`Swap` is a special file located on your hard disk, which the system could use as an additional virtual memory space.
 
 The default size of the `Swap` on my `Ubuntu20.04` system is `2.GiB`, which is insufficient. 
 
@@ -157,7 +154,7 @@ After finishing these two steps, I can run my RL model without any error related
 
 ### Reference:
 
-1. Unable to allocate array with shape and data type. https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type
+1. Unable to allocate array with shape and data type. [https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type](https://stackoverflow.com/questions/57507832/unable-to-allocate-array-with-shape-and-data-type)
 
-2. Change swap size in Ubuntu 18.04 or newer. https://bogdancornianu.com/change-swap-size-in-ubuntu/
+2. Change swap size in Ubuntu 18.04 or newer. [https://bogdancornianu.com/change-swap-size-in-ubuntu/](https://bogdancornianu.com/change-swap-size-in-ubuntu/)
 
