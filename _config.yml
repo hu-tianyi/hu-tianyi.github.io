@@ -89,7 +89,7 @@ social:
   links: # An array of links to social media profiles
     - "https://space.bilibili.com/11555430"
     - "https://www.youtube.com/channel/UCkn5AhvuX301yorjWLQ3-pw"
-    - "https://twitter.com/TianyiHu3"
+    - "https://twitter.com/TianyiTimHu"
     - "https://www.zhihu.com/people/hutianyi-45"
     - "https://www.facebook.com/tianyi.hu.tim"
 
@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Tianyi Hu"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Master's student in Computer Engineering at UC Irvine"
+  bio              : "Master of Science in Computer Engineering at UC Irvine"
   location         : "Irvine, California"
   email            : "hu_tianyi@outlook.com"
   links:
@@ -117,7 +117,7 @@ author:
       url: "https://www.hutianyi.tech"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/TianyiHu3"
+      url: "https://twitter.com/TianyiTimHu"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/tianyi.hu.tim"
@@ -146,7 +146,7 @@ footer:
 #      url: "https://www.hutianyi.tech"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/TianyiHu3"
+      url: "https://twitter.com/TianyiTimHu"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/tianyi.hu.tim"
