@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll" # If you’re using the Ruby gem version of the theme
-remote_theme           : "mmistakes/minimal-mistakes@4.21.0" # for running at GitHub Page
+remote_theme             : "mmistakes/minimal-mistakes@4.21.0" # for running at GitHub Page
 minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Note: If you have made edits to the theme’s CSS files 
 #       be sure to update /assets/css/main.scss to include 
@@ -40,8 +40,7 @@ comments:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
+  facebook:                # https://developers.facebook.com/docs/plugins/comments
     appid                :
     num_posts            : 5 # 5 (default)
     colorscheme          : "dark" # "light" (default), "dark"

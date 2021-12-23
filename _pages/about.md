@@ -27,7 +27,7 @@ toc: true
 
 Education
 ======
-* M.S. in Computer Engineering, University of California - Irvine, 2020-2022
+* M.S. in Computer Engineering, University of California - Irvine, 2020-2022 
 * B.Eng. in Electronics and Computer Science (First Class), University of Edinburgh, 2018-2020 
 * B.Eng. in Information Engineering, South China University of Technology, 2016-2018
 
