@@ -159,6 +159,9 @@ footer:
     - label: "ZhiHu"
       icon: "fab fa-fw fa-zhihu"
       url: "https://www.zhihu.com/people/hutianyi-45"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/tianyi.hu.tim/"
 
 
 # Reading Files
