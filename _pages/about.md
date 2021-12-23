@@ -7,14 +7,6 @@ header:
   actions:
   - label: "Get my CV"
     url: /assets/documents/CV_TianyiHu_English.pdf
-/*sidebar:
-  - title: "Title"
-    image: /assets/images/logo.png
-    image_alt: "image"
-    text: "Some text here."
-  - title: "Another Title"
-    text: "More text here."
-*/
 categories:
   - About
   - Uncategorized
