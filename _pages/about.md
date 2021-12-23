@@ -34,16 +34,23 @@ Education
 
 Research Experience
 ======
+* Sept.2021 - Dec.2021 Truck Detection using Satellite Images
+   * University of California - Irvine
+   * Supervisor: Prof. XiaoHui Xie
+   *  Use Oriented Object Detection to detect trucks in the Southern California
+* May.2021 - Sept.2021 Online Learning for System Orchestration
+   * University of California - Irvine
+   * Supervisor: Prof. Nikil Dutt
+   * Deploy deep reinforcement learning to optimize the off-loading strategy for edge-cloud network 
 * Sept.2019 - April.2020 Honor Year Project: Towards Privacy Leakage in Deep Models
    * University of Edinburgh
    * Supervisor: Prof. Sotirios Tsaftaris
    * Focus on privacy leakage and memorization properties of machine learning models
    * Conduct research on Membership Inference Attack
-
-* July.2019 - Sept.2019: Patient Initiated Controlled Analgesic Remote Dispenser
+* July.2019 - Sept.2019, Sept.2021-Now: Patient Initiated Controlled Analgesic Remote Dispenser
   * University of California - Irvine 
   * Supervisor: Prof. Sergio Gago
-  * Work on solution of Opioid Overdose Crisis in USA
+  * Design a smart IoT Pillbox which targets at the Opioid Overdose Crisis in USA
   * Conduct embedded system design & debug
   * Design PCB layout& Assembly SMT components
 
@@ -63,6 +70,7 @@ Skills
   * Woodwind： Clarinet, Soprano Saxophone
 
 <!-- 
+
 Publications
 ======
   <ul>{% for post in site.publications %}
