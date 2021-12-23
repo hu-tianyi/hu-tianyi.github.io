@@ -23,6 +23,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
+date_format              : "%Y-%m-%d"
 words_per_minute         : 200
 comments:
   provider               : "false" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "custom"
@@ -207,7 +208,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      date_format: "%Y-%m-%d"
   # _pages
   - scope:
       path: "_pages"
