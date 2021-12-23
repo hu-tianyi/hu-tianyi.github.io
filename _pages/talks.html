@@ -1,0 +1,12 @@
+---
+layout: splash
+title: "Talks"
+permalink: /talk/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for post in site.talk reversed %}
+  {% include archive-single.html %}
+{% endfor %}
